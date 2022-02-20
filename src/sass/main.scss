@@ -4,13 +4,18 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-@import './example';
-@import './base/reset';
+
 @import './utils/vars';
+@import './base/reset';
+@import './base/base';
 @import './utils/breakpoints';
 
 
 @import './base/container';
 @import './layout/header';
 @import './layout/hero';
+@import './layout/about';
+@import './layout/caese';
+@import './layout/blog';
+@import './layout/team';
 

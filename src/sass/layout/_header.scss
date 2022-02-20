@@ -8,6 +8,38 @@
     z-index: 5;
 }
 .fa-book-open{
-    width: 35px;
-    height: 40px;
+    width: 40px;
+    height: 30px;
+    color:   $current-color;
+    margin-right: 5px;
+}
+.logo__green{
+    color:   $current-color;
+}
+.logo{
+    display: flex;
+    font-weight: 400;
+font-size: 32px;
+line-height: 42px;
+    color: $secondary-text-color;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.nav{
+display: block;
+}
+.nav__list{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+}
+.nav__item a{
+    
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $secondary-text-color;
 }
