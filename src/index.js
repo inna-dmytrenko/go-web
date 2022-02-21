@@ -1,4 +1,5 @@
 import './sass/main.scss';
+import lightbox from 'lightbox2/dist/js/lightbox';
 
 window.onscroll = function () {
   if (window.screen.width >= 768) {
@@ -32,8 +33,6 @@ function validate(e) {
     valid = false;
   }
 
-  // проверяем поле комментария
-
   // проверяем поле емейла
   const emailField = document.getElementById('email');
 
@@ -47,7 +46,7 @@ function validate(e) {
     const re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
     if (!re.test(String(emailField.value).toLowerCase())) {
       document.querySelector('label[for="email"]').innerHTML +=
-        ' <span class="validation-error">Некорректный email</span>';
+        ' <span class="validation-error">Invalid email address.</span>';
       valid = false;
     }
   }
@@ -61,3 +60,9 @@ function validate(e) {
 const form = document.getElementById('form');
 
 form.addEventListener('submit', validate);
+
+window.lightbox = lightbox;
+window.lightbox.option({
+  disableScrolling: true,
+  positionFromTop: 200,
+});

@@ -1,75 +1,70 @@
-.header{
-    margin: 0 auto;
-    width: 100%;
-   
-    position: fixed;
-    height: 120px;
-    padding-top: 20px;
-    z-index: 5;
+.header {
+  margin: 0 auto;
+  width: 100%;
+
+  position: fixed;
+  height: 120px;
+  padding-top: 20px;
+  z-index: 5;
 }
-.scroll{
- background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8))
+.scroll {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
 }
-.fa-book-open{
-    width: 40px;
-    height: 30px;
-    color:   $current-color;
-    margin-right: 5px;
+.fa-book-open {
+  width: 40px;
+  height: 30px;
+  color: $current-color;
+  margin-right: 5px;
 }
-.logo__green{
-    color:   $current-color;
+.logo__green {
+  color: $current-color;
 }
-.logo{
-    display: flex;
-    font-weight: 400;
-font-size: 32px;
-line-height: 42px;
-    color: $secondary-text-color;
-    margin-bottom: 10px;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.5s ease-in-out;
+.logo {
+  display: flex;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 42px;
+  color: $secondary-text-color;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
 }
-.logo:hover{
-    transform: scale(1.1);
-    
+.logo:hover {
+  transform: scale(1.1);
 }
 
-.nav{
-display: block;
+.nav {
+  display: block;
 }
-.nav__list{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    
+.nav__list {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
-.nav__item a{
-    
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    color: $secondary-text-color;
+.nav__item a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: $secondary-text-color;
 }
-.nav__link{
-   
-    position: relative;
+.nav__link {
+  position: relative;
+}
+.nav__link:after {
+  display: block;
+  content: '';
+  position: absolute;
+  background: #28a745;
+  border-radius: 5px;
 
-}
-.nav__link:after{
-    display: block;
-    content: "";
-    position: absolute;
-    background: #28a745;
-    border-radius: 5px;
-  
-    height: 2px;
-   
-    left: 0;
-    width: 0;
-    transition: width 0.5s ease-out;
-}
-.nav__link:hover:after, .nav__link:focus:after{
+  height: 2px;
 
-    width: 100%;
+  left: 0;
+  width: 0;
+  transition: width 0.5s ease-out;
+}
+.nav__link:hover:after,
+.nav__link:focus:after {
+  width: 100%;
 }

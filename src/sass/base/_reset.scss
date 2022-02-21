@@ -9,27 +9,27 @@ p {
 }
 
 ul,
-ol, li {
+ol,
+li {
   margin: 0;
   padding: 0;
-list-style: none;
+  list-style: none;
 }
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 a {
-    background: transparent;
-    text-decoration: none;
+  background: transparent;
+  text-decoration: none;
 }
 a:active, /* активная/посещенная ссылка */
-a:hover  /* при наведении */
- {
+a:hover  /* при наведении */ {
   text-decoration: none;
-//   color: #666;
+  //   color: #666;
 }

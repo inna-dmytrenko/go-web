@@ -1,84 +1,82 @@
 .about__icon {
-        display: flex;
-    justify-content: center;
-       align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 64px;
   height: 64px;
   margin: 0 auto 10px auto;
 
-  background:  $current-color;
+  background: $current-color;
   border-radius: 33.5px;
-  
 }
 
 .svg-inline--fa.fa-building-columns,
 .svg-inline--fa.fa-book-open-reader,
-.svg-inline--fa.fa-pencil{
-    height: 35px;
-    width: 35px;
-color: $main-title-color;
+.svg-inline--fa.fa-pencil {
+  height: 35px;
+  width: 35px;
+  color: $main-title-color;
 }
-.about__item{
-    display: block;
-    
-    
-    text-align: center;
-    margin-bottom: 20px;
-}
-.about__title{
-    font-weight: normal;
-font-size: 18px;
-line-height: 30px;
-margin-bottom: 15px;
-}
-.about__para{
-    font-size: 16px;
-line-height: 26px;
+.about__item {
+  display: block;
 
+  text-align: center;
+  margin-bottom: 20px;
 }
-.about__image{
-    // width: 320px;
-    // height: 220px;
+.about__title {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 15px;
 }
-.solut{
-    background-color: $current-color;
-    padding:30px;
+.about__para {
+  font-size: 16px;
+  line-height: 26px;
 }
-.solut__title{
-    font-size: 18px;
-    font-style: normal;
-font-weight: 400;
-line-height: 30px;
-color: $secondary-text-color;
+.solut {
+  background-color: $current-color;
+  padding: 30px;
 }
-.solut__subtitle{
-font-size: 38px;
-line-height: 48px;
-font-style: normal;
-font-weight: 300;
-color: $secondary-text-color;
-margin-bottom: 25px;
+.solut__title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  color: $secondary-text-color;
 }
-.solut__para{
-    font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 26px;
-color: $secondary-text-color;
-margin-bottom: 15px;
+.solut__subtitle {
+  font-size: 38px;
+  line-height: 48px;
+  font-style: normal;
+  font-weight: 300;
+  color: $secondary-text-color;
+  margin-bottom: 25px;
 }
-.solut__btn{
+.solut__para {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: $secondary-text-color;
+  margin-bottom: 15px;
+}
+.solut__btn {
+  width: 158px;
+  height: 47px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
 
-    width: 158px;
-height: 47px;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 26px;
-
-border: 1px solid $secondary-text-color;
-box-sizing: border-box;
-border-radius: 5px;
-background-color: $current-color;
-color: $secondary-text-color;
+  border: 1px solid $secondary-text-color;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: $current-color;
+  color: $secondary-text-color;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    background-color: $secondary-text-color;
+    color: $current-color;
+  }
 }
