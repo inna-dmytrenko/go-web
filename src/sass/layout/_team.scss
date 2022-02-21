@@ -6,6 +6,10 @@
 }
 .wrapper{
  position: relative;
+ margin-bottom: 15px;
+}
+.wrapper:hover .overlay, .wrapper:focus .overlay{
+    display: block;
 }
 .team__subtitle{
     
@@ -33,19 +37,26 @@ margin-bottom: 35px;
 font-weight: normal;
 font-size: 23px;
 line-height: 29px;
+margin-bottom: 10px;
 }
 .team__post{
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 26px;
+margin-bottom: 10px;
 }
+.team__post.last{
+    margin-bottom: 0;
+}
+
 .team__social__list{
     display: flex;
     justify-content: center;
     
 }
 .overlay{
+    display: none;
     position: absolute;
       top: 0;
   bottom: 0;
@@ -56,4 +67,22 @@ line-height: 26px;
    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 
   padding-top: 30%;
+}
+.team__social__item:nth-last-child(n+2){
+    margin-right: 25px;
+}
+.svg-inline--fa.fa-facebook, .svg-inline--fa.fa-twitter{
+width: 35px;
+height: 35px;
+color: $secondary-text-color;
+}
+.svg-inline--fa.fa-youtube{
+width: 40px;
+height: 35px;
+color: $secondary-text-color;
+}
+.svg-inline--fa.fa-linkedin{
+width: 30px;
+height: 35px;
+color: $secondary-text-color;
 }

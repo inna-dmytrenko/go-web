@@ -2,10 +2,13 @@
     margin: 0 auto;
     width: 100%;
    
-    position: absolute;
+    position: fixed;
     height: 120px;
     padding-top: 20px;
     z-index: 5;
+}
+.scroll{
+ background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8))
 }
 .fa-book-open{
     width: 40px;
@@ -25,8 +28,13 @@ line-height: 42px;
     margin-bottom: 10px;
     justify-content: center;
     align-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+.logo:hover{
+    transform: scale(1.1);
     
 }
+
 .nav{
 display: block;
 }
@@ -42,4 +50,26 @@ display: block;
     font-size: 16px;
     line-height: 26px;
     color: $secondary-text-color;
+}
+.nav__link{
+   
+    position: relative;
+
+}
+.nav__link:after{
+    display: block;
+    content: "";
+    position: absolute;
+    background: #28a745;
+    border-radius: 5px;
+  
+    height: 2px;
+   
+    left: 0;
+    width: 0;
+    transition: width 0.5s ease-out;
+}
+.nav__link:hover:after, .nav__link:focus:after{
+
+    width: 100%;
 }

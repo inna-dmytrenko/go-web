@@ -1,0 +1,50 @@
+.contact__form{
+    background-color: $contact-bg-color;
+    padding: 30px;
+}
+.contact__title{
+    font-style: normal;
+font-weight: 300;
+font-size: 38px;
+line-height: 48px;
+margin-bottom: 25px;
+}
+.input{
+    width: 260px;
+height: 40px;
+
+
+background: #FFFFFF;
+border: 1px solid #F5F5F5;
+box-sizing: border-box;
+border-radius: 0px;
+margin-bottom: 35px;
+}
+.input.last{
+    margin-bottom: 55px;
+}
+.input::placeholder{
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 23px;
+/* or 144% */
+
+
+color: #808080;
+}
+.contact__btn{
+    width: 260px;
+height: 42px;
+
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+
+
+color: #FFFFFF;
+background: #28A745;
+border-radius: 5px;
+border: 0;
+}
