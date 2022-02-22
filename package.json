@@ -6,7 +6,9 @@
 
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /go-web/"
+    "build": "parcel build src/*.html",
+    "predeploy": "npm run build",
+    "deploy": "netlify deploy -p"
   },
   "repository": {
     "type": "git",

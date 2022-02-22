@@ -1,3 +1,9 @@
+.about .container{
+    padding-bottom: 30px;
+}
+.about.section{
+    padding-top: 30px;
+}
 .about__icon {
   display: flex;
   justify-content: center;
@@ -21,6 +27,10 @@
   display: block;
 
   text-align: center;
+//   margin-bottom: 20px;
+}
+.about__item:nth-last-child(n+2) {
+  
   margin-bottom: 20px;
 }
 .about__title {
@@ -44,11 +54,8 @@
   line-height: 30px;
   color: $secondary-text-color;
 }
-.solut__subtitle {
-  font-size: 38px;
-  line-height: 48px;
-  font-style: normal;
-  font-weight: 300;
+.solut .title {
+ 
   color: $secondary-text-color;
   margin-bottom: 25px;
 }

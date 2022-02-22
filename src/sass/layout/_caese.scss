@@ -1,23 +1,24 @@
+.cases.section{
+    // padding-top: 0;
+}
+
 .cases {
   color: $primary-text-color;
   text-align: center;
-  padding-top: 50px;
+//   padding-top: 50px;
 }
-.cases__title {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 38px;
-  line-height: 48px;
+.cases .title {
+  
   padding-right: 50px;
   padding-left: 50px;
-  padding-bottom: 35px;
+  
 }
 .cases__subtitle {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
-  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 .cases__para {
   font-style: normal;
@@ -27,7 +28,7 @@
   padding-bottom: 35px;
 }
 .cases__list {
-  padding-bottom: 45px;
+//   padding-bottom: 45px;
 }
 .cases__item:nth-last-child(n + 2) {
   margin-bottom: 10px;

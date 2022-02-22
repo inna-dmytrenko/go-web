@@ -7,7 +7,7 @@ window.onscroll = function () {
       ? document.getElementById('header').classList.remove('scroll')
       : document.getElementById('header').classList.add('scroll');
   } else {
-    scrollY <= 120
+    scrollY <= 5
       ? document.getElementById('header').classList.remove('scroll')
       : document.getElementById('header').classList.add('scroll');
   }
